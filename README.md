@@ -1,5 +1,5 @@
 # luanvim
-Configuracion utilizando lazy.nvim 
+Configuracion utilizando [lazy.nvim](https://github.com/folke/lazy.nvim) 
 
 Debemos instalar primero nvim 
 
