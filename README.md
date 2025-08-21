@@ -19,4 +19,4 @@ Corremos `nvim` y el comando:
 
 Creamos el directorio si no existe y ahí copiamos el contenido de este Repo.
 
-
+![Screen Shot Windows con Catppuccin](./img/windows.png?raw=true "En Windows, `colorscheme`: catppuccin")
