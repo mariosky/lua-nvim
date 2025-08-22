@@ -5,13 +5,13 @@ Debemos instalar primero nvim
 
 https://github.com/neovim/neovim/blob/master/INSTALL.md
 
-En caso de no haberlo hecho antes, instalamos los Nerd Fonts 
+En caso de no haberlo hecho antes, instalamos:
 
-https://www.nerdfonts.com/
+* [Nerd Fonts](https://www.nerdfonts.com/). Un buen font es [DejaVuSans](https://www.programmingfonts.org/#dejavu)
+* [Finder](https://github.com/sharkdp/fd)
 
-Una buena opción es la de DejaVuSans
 
-https://www.programmingfonts.org/#dejavu
+
 
 Corremos `nvim` y el comando:  
 
