@@ -14,13 +14,15 @@ En caso de no haberlo hecho antes, instalamos:
 * [Finder](https://github.com/sharkdp/fd),
 * [ripgrep](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation)
 
-
-
-
 Corremos `nvim` y el comando:  
 
 ```:echo stdpath("config")```
 
-Creamos el directorio si no existe y ahí copiamos el contenido de este Repo.
+Creamos un link simbólico al directorio, especificando como <Target> el contenido de este repositorio.
+Por ejemplo en Windows desde `cmd.exe`:
+
+```
+mklink /D C:\Users\mario\AppData\Local\nvim C:\Users\mario\lua-nvim
+```
 
 ![Screen Shot Windows con Catppuccin](./img/windows.png?raw=true "En Windows, `colorscheme`: catppuccin")
