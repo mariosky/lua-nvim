@@ -1,17 +1,21 @@
-# luanvim
-Configuracion utilizando [lazy.nvim](https://github.com/folke/lazy.nvim) 
+# lua nvim
+Mi configuracion de nvim utilizando [lazy.nvim](https://github.com/folke/lazy.nvim) 
+Es un copy-paste de muchas configuraciones que han compartido otros, pero esta es una versión minimalista con 
+el menor número de plugins, sin muchos elementos de GUI como: Buffer o Status Lines, GUI para GIT, Which Key, pantalla de bienvenida, etc. 
+
 
 Debemos instalar primero nvim 
 
 https://github.com/neovim/neovim/blob/master/INSTALL.md
 
-En caso de no haberlo hecho antes, instalamos los Nerd Fonts 
+En caso de no haberlo hecho antes, instalamos:
 
-https://www.nerdfonts.com/
+* [Nerd Fonts](https://www.nerdfonts.com/). Una buena fuente es [DejaVuSans](https://www.programmingfonts.org/#dejavu).
+* [Finder](https://github.com/sharkdp/fd),
+* [ripgrep](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation)
 
-Una buena opción es la de DejaVuSans
 
-https://www.programmingfonts.org/#dejavu
+
 
 Corremos `nvim` y el comando:  
 
