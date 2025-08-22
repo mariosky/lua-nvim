@@ -18,7 +18,9 @@ Corremos `nvim` y el comando:
 
 ```:echo stdpath("config")```
 
-Creamos un link simbólico al directorio, especificando como <Target> el contenido de este repositorio.
+Este comando nos imprime el directorio de la configuración de nvim. 
+Creamos un link simbólico al directorio de configuración especificando como <Target> el contenido de este repositorio.
+
 Por ejemplo en Windows desde `cmd.exe`:
 
 ```
