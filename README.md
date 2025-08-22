@@ -1,6 +1,8 @@
 # lua nvim
 Mi configuracion de nvim utilizando [lazy.nvim](https://github.com/folke/lazy.nvim) 
-Es un copy-paste de muchas configuraciones que han compartido otros.  
+Es un copy-paste de muchas configuraciones que han compartido otros, pero esta es una versión minimalista con 
+el menor número de plugins, sin muchos elementos de GUI como: Buffer o Status Lines, GUI para GIT, Which Key, pantalla de bienvenida, etc. 
+
 
 Debemos instalar primero nvim 
 
