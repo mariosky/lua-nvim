@@ -7,7 +7,7 @@ https://github.com/neovim/neovim/blob/master/INSTALL.md
 
 En caso de no haberlo hecho antes, instalamos:
 
-* [Nerd Fonts](https://www.nerdfonts.com/). Un buen font es [DejaVuSans](https://www.programmingfonts.org/#dejavu)
+* [Nerd Fonts](https://www.nerdfonts.com/). Un buen font es [DejaVuSans](https://www.programmingfonts.org/#dejavu).
 * [Finder](https://github.com/sharkdp/fd)
 
 
