@@ -26,5 +26,8 @@ Por ejemplo en Windows desde `cmd.exe`:
 ```
 mklink /D C:\Users\mario\AppData\Local\nvim C:\Users\mario\lua-nvim
 ```
+En macOS desde el folder de mi usuario (se asume que ya existe el directorio `.config`):
+ln -s lua-nvim .config/nvim
+
 
 ![Screen Shot Windows con Catppuccin](./img/windows.png?raw=true "En Windows, `colorscheme`: catppuccin")
