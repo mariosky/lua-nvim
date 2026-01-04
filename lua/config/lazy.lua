@@ -4,7 +4,8 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
-  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+  local out = vim.fn.system({ "git", "clone", "--filter=blob:none",
+  "--branch=stable", lazyrepo, lazypath })
   if vim.v.shell_error ~= 0 then
     vim.api.nvim_echo({
       { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
@@ -83,7 +84,10 @@ vim.o.numberwidth = 4 -- set number column width to 2 {default 4}
 vim.o.cursorline = false -- highlight the current line
 vim.o.conceallevel = 0 -- so that `` is visible in markdown files
 
-
+vim.opt.tabstop = 4        -- Un tab se muestra como 4 espacios
+vim.opt.shiftwidth = 4    -- Indentación de 4 espacios
+vim.opt.softtabstop = 4   -- Tab avanza 4 espacios
+vim.opt.expandtab = true
 
 -- Setup lazy.nvim
 require("lazy").setup({
