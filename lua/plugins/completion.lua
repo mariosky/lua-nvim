@@ -1,8 +1,9 @@
 return {
   "hrsh7th/nvim-cmp",
-  dependencies = { "hrsh7th/cmp-nvim-lsp", "hrsh7th/cmp-buffer" },
+  dependencies = { "L3MON4D3/LuaSnip", "hrsh7th/cmp-nvim-lsp", "hrsh7th/cmp-buffer" },
   config = function()
-    local cmp = require('cmp') -- Move require inside here
+    local cmp = require('cmp') 
+    local luasnip = require('luasnip')
     cmp.setup({
           expand = function(args)
               luasnip.lsp_expand(args.body)
