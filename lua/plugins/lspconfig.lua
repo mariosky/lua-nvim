@@ -1,9 +1,10 @@
 return { -- Ensure this 'return' is present
   "neovim/nvim-lspconfig",
-  dependencies = { 
-    "williamboman/mason.nvim", 
-    "williamboman/mason-lspconfig.nvim" 
+  dependencies = {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim"
   },
+  run = "make install_jsregexp",
   config = function()
     -- 1. Setup Mason first
     require("mason").setup()
