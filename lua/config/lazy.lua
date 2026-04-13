@@ -4,7 +4,8 @@
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
-  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+  local out = vim.fn.system({ "git", "clone", "--filter=blob:none",
+  "--branch=stable", lazyrepo, lazypath })
   if vim.v.shell_error ~= 0 then
     vim.api.nvim_echo({
       { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
@@ -23,6 +24,14 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- Activar el ajuste de línea (wrap)
+vim.opt.wrap = true
+
+-- Ajuste inteligente: rompe la línea en palabras completas, no a mitad de palabra
+vim.opt.linebreak = true
+
+-- (Opcional) Mantiene la indentación visual de la línea envuelta
+vim.opt.breakindent = true
 
 --NvimTree
 -- disable netrw at the very start of your init.lua
@@ -83,7 +92,18 @@ vim.o.numberwidth = 4 -- set number column width to 2 {default 4}
 vim.o.cursorline = false -- highlight the current line
 vim.o.conceallevel = 0 -- so that `` is visible in markdown files
 
+vim.opt.tabstop = 4        -- Un tab se muestra como 4 espacios
+vim.opt.shiftwidth = 4    -- Indentación de 4 espacios
+vim.opt.softtabstop = 4   -- Tab avanza 4 espacios
+vim.opt.expandtab = true
 
+-- Moverse por líneas visuales (wrapped) con j y k
+vim.keymap.set('n', 'j', 'gj', { noremap = true, silent = true })
+vim.keymap.set('n', 'k', 'gk', { noremap = true, silent = true })
+
+-- (Opcional) También para el inicio y final de la línea visual
+vim.keymap.set('n', '0', 'g0', { noremap = true, silent = true })
+vim.keymap.set('n', '$', 'g$', { noremap = true, silent = true })
 
 -- Setup lazy.nvim
 require("lazy").setup({
